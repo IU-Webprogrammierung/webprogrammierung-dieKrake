@@ -5,7 +5,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -17,11 +16,6 @@
   display: flex;
   flex-direction: row;
   padding-left: 16px;
-}
-
-#navigation-heading {
-  background-color: bisque;
-  margin-top: 0;
 }
 
 .navigation-list-footer {
@@ -42,6 +36,19 @@
 
 .footer-right {
   background-color: aqua;
+  padding-top: 0;
+}
+
+h4 {
+  background-color: bisque;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+p {
+  background-color: bisque;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 body {
