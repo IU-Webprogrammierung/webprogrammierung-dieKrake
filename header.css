@@ -10,17 +10,17 @@
   box-sizing: border-box;
 }
 
-.navigation {
-  background-color: brown;
+.navigation-header {
+  background-color: red;
 }
 
-.navigation-list {
+.navigation-list-header {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 16px;
 }
 
 .navigation-list-element {
@@ -43,6 +43,9 @@ body {
   body {
     font-size: 18px;
   }
+  .header {
+    height: 100px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -60,5 +63,8 @@ body {
 @media (min-width: 1024px) {
   body {
     font-size: 24px;
+  }
+  .header {
+    height: 110px;
   }
 }
