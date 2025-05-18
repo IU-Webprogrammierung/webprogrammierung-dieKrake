@@ -1,0 +1,28 @@
+.header {
+  background-color: #adadad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.navigation-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.navigation-list-element {
+  background-color: aquamarine;
+}
+
+.email-link {
+  background-color: blueviolet;
+}
+
+a {
+  text-decoration: none;
+}
