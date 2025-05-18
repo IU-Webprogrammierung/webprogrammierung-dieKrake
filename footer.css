@@ -1,7 +1,22 @@
 .footer {
   background-color: #adadad;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: auto;
+}
+
+.navigation {
+  background-color: brown;
+  display: flex;
+}
+
+.footer-left {
+  background-color: beige;
+  display: flex;
+}
+
+.footer-right {
+  background-color: aqua;
 }
