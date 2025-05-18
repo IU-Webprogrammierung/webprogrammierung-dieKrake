@@ -1,9 +1,13 @@
 .header {
-  background-color: #adadad;
+  background-color: #646464;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 110px;
+}
+
+.navigation {
+  background-color: brown;
 }
 
 .navigation-list {
