@@ -39,6 +39,12 @@
   padding-top: 0;
 }
 
+#footer-logo {
+  display: inline-block;
+  height: 50px;
+  background-color: brown;
+}
+
 h4 {
   background-color: bisque;
   margin-top: 0;
