@@ -35,36 +35,28 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-size: 16px;
-}
-
 @media (min-width: 480px) {
-  body {
-    font-size: 18px;
-  }
   .header {
+    font-size: 18px;
     height: 100px;
   }
 }
 
 @media (min-width: 640px) {
-  body {
+  .header {
     font-size: 20px;
   }
 }
 
 @media (min-width: 768px) {
-  body {
+  .header {
     font-size: 22px;
   }
 }
 
 @media (min-width: 1024px) {
-  body {
-    font-size: 24px;
-  }
   .header {
+    font-size: 24px;
     height: 110px;
   }
 }
