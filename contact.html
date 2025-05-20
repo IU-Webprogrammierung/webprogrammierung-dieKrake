@@ -5,10 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <script src="js/include.js"></script>
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
     <div id="header"></div>
-    <h1>Kontakt</h1>
+    <section class="contact-text">
+      <h1>Mein Kontaktformular</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nesciunt
+        obcaecati quae blanditiis vitae harum ex ab! Vitae natus obcaecati nemo
+        dignissimos sapiente animi quam beatae.
+      </p>
+    </section>
+    <section class="contact-form">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" />
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Senden</button>
+      </form>
+    </section>
+    <section class="contact-info">
+      <h3>example@ex.com</h3>
+      <h3>0123 456789</h3>
+    </section>
     <div id="footer"></div>
   </body>
 </html>
