@@ -109,6 +109,12 @@ function includeHTML(elementId, file) {
 }
 ```
 
+## ⌨️ Aktuelle Projektphase
+
+- [x] Konzeptionsphase
+- [ ] Erarbeitungs-/Reflexionsphase
+- [ ] Finalisierungsphase
+
 ## 📝 Aktuelle To-Dos
 
 - [ ] Fertigstellung der Inhalte (aktuell sind Platzhaltertexte vorhanden)
