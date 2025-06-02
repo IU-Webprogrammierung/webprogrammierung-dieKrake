@@ -111,7 +111,7 @@ function includeHTML(elementId, file) {
 
 ## ⌨️ Aktuelle Projektphase
 
-- [x] Konzeptionsphase
+- [❌] Konzeptionsphase
 - [ ] Erarbeitungs-/Reflexionsphase
 - [ ] Finalisierungsphase
 
