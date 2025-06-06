@@ -112,13 +112,14 @@ function includeHTML(elementId, file) {
 ## ⌨️ Aktuelle Projektphase
 
 - [❌] Konzeptionsphase
-- [ ] Erarbeitungs-/Reflexionsphase
+- [❌] Erarbeitungs-/Reflexionsphase
 - [ ] Finalisierungsphase
 
 ## 📝 Aktuelle To-Dos
 
-- [ ] Fertigstellung der Inhalte (aktuell sind Platzhaltertexte vorhanden)
-- [ ] Optimierung der Bilder und Medien
+- [❌] Fertigstellung der Inhalte (aktuell sind Platzhaltertexte vorhanden)
+- [❌] Optimierung der Bilder und Medien
+- [ ] CSS Styling der einzelnen Seiten
 - [ ] Ergänzung weiterer Projekte im Portfolio-Bereich
 - [ ] Responsives Design für alle Bildschirmgrößen fertigstellen
 
