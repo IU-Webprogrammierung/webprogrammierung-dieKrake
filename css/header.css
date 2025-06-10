@@ -19,7 +19,6 @@
 .navigation-list-header {
   display: flex;
   list-style: none;
-  gap: 2rem;
   margin: 0;
   padding: 0;
 }
@@ -64,7 +63,7 @@
 
 /* Animation for burger menu */
 .burger-menu.active .burger-line:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .burger-menu.active .burger-line:nth-child(2) {
@@ -72,7 +71,7 @@
 }
 
 .burger-menu.active .burger-line:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
 }
 
 /* Mobile Navigation */
