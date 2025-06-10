@@ -4,10 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function includeHTML(elementId, file) {
-  fetch(file)
+  return fetch(file)
     .then((response) => response.text())
     .then((data) => {
       document.getElementById(elementId).innerHTML = data;
+      return Promise.resolve();
     })
     .catch((error) => console.error("Include error:", error));
 }
