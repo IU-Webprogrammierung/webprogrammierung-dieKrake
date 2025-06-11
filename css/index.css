@@ -1,9 +1,17 @@
 .hero-section {
-  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  background-color: chocolate;
+}
+
+.hero-button {
+  background-color: aquamarine;
+  width: 100%;
+  border: none;
 }
 
 .hero-text {
-  background-color: rgb(135, 146, 124);
+  text-align: center;
 }
 
 .services-section {
