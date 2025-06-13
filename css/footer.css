@@ -13,14 +13,12 @@
 }
 
 .navigation-footer {
-  background-color: blueviolet;
   display: flex;
   flex-direction: row;
   padding-left: 16px;
 }
 
 .navigation-list-footer {
-  background-color: beige;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -31,29 +29,32 @@
 }
 
 .footer-left {
-  background-color: beige;
   display: flex;
 }
 
 .footer-right {
-  background-color: aqua;
   padding-top: 0;
 }
 
 #footer-logo {
   display: inline-block;
   height: 50px;
-  background-color: brown;
 }
 
-h4 {
-  background-color: bisque;
+.navigation-list-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#navigation-heading {
   margin-top: 0;
-  margin-bottom: 8px;
+}
+
+#contact-heading {
+  margin-top: 0;
 }
 
 p {
-  background-color: bisque;
   margin-top: 0;
   margin-bottom: 8px;
 }
@@ -62,6 +63,20 @@ p {
   .footer {
     font-size: 18px;
     flex-direction: column;
+  }
+  #footer-logo {
+    margin-bottom: 16px;
+  }
+  .footer-left {
+    flex-direction: column;
+    margin-bottom: 28px;
+  }
+  .navigation-footer {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  .navigation-list-footer {
+    padding-left: 0px;
   }
 }
 
