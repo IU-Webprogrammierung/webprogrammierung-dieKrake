@@ -18,7 +18,7 @@
 }
 
 .homepage-button {
-  background-color: rgb(118, 118, 118);
+  background-color: rgb(30, 59, 174);
   height: 40px;
   width: 100%;
   border: none;
@@ -66,7 +66,7 @@
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto;
   gap: 20px;
-  border: solid 1px black;
+  border: solid 2px rgb(30, 59, 174);
   border-radius: 20px;
   padding: 16px;
   align-items: center;
