@@ -1,6 +1,12 @@
 /* Header Styles */
 .header {
-  background-color: #adadad;
+  background: linear-gradient(
+    135deg,
+    rgb(30, 59, 174) 0%,
+    rgb(132, 159, 245) 20%,
+    rgb(212, 224, 255) 70%,
+    rgb(245, 248, 255) 100%
+  );
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -24,19 +30,16 @@
 }
 
 .navigation-list-element a {
-  color: white;
+  color: #333333;
+  opacity: 0.8;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
-.navigation-list-element a:hover {
-  background-color: #555;
-}
-
 .email-link {
-  color: white;
+  color: #333333;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -81,10 +84,10 @@
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #adadad;
+  background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid rgb(30, 59, 174);
   border-radius: 0 0 12px 12px;
 }
 
@@ -99,7 +102,7 @@
 }
 
 .mobile-nav-list li {
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid rgb(30, 59, 174);
   border-radius: 12px;
 }
 
@@ -113,10 +116,6 @@
   text-decoration: none;
   padding: 1rem 2rem;
   transition: background-color 0.3s ease;
-}
-
-.mobile-nav-list a:hover {
-  background-color: #555;
 }
 
 /* Responsive Design */

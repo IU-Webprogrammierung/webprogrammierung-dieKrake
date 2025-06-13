@@ -1,17 +1,143 @@
 .cv-section {
-  background-color: beige;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.cv-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: left;
+}
+
+.cv-card {
+  background: #fff;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.cv-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-color: #e0e0e0;
+}
+
+.cv-card h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.cv-card h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(30, 59, 174);
+  margin-bottom: 0.3rem;
+  text-align: left;
+}
+
+.cv-card h4 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-style: italic;
+}
+
+.cv-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.project-card {
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.project-card h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.cv-divider {
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(
+    135deg,
+    rgb(30, 59, 174) 0%,
+    rgb(132, 159, 245) 20%,
+    rgb(212, 224, 255) 70%,
+    rgb(245, 248, 255) 100%
+  );
+  margin: 2rem auto;
+  border-radius: 1px;
+  opacity: 0.4;
 }
 
 .study-section {
-  background-color: cadetblue;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+.study-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: left;
+}
+
+.study-section h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.study-section p {
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+  margin-bottom: 0.5rem;
 }
 
 .certificates-section {
   background-color: burlywood;
 }
 
-.cv-divider {
-  background-color: yellowgreen;
-  height: 40px;
-  width: 20px;
+.divider {
+  width: 100%;
+  height: 2px;
+  background: black;
+  margin: 2rem auto;
+  border-radius: 1px;
+  opacity: 0.4;
 }
