@@ -1,15 +1,53 @@
-.coaching-section {
-  background-color: cadetblue;
+.services-section {
+  line-height: 1.6;
+  color: #333;
 }
 
-.coaching-text {
-  background-color: rgb(135, 146, 124);
+.services-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.coaching-image {
-  background-color: rgb(145, 200, 234);
+.services-text h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
 }
 
-.software-section {
-  background-color: burlywood;
+.services-text h2 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-width: 300px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: contain;
+  align-self: center;
+}
+
+.services-button {
+  background-color: rgb(30, 59, 174);
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  color: white;
 }
