@@ -1,30 +1,27 @@
-.cv-section {
+.cv-section,
+.study-section {
   line-height: 1.6;
   color: #333;
 }
 
-.cv-section h1 {
-  font-size: 2.5rem;
+.cv-section h1,
+.study-section h1,
+.certificates-section h1 {
+  font-size: 1.8rem;
   font-weight: 700;
   color: #2c3e50;
   margin-bottom: 1rem;
-  position: relative;
   text-align: left;
 }
 
 .cv-card {
-  background: #fff;
   margin-bottom: 1.5rem;
   position: relative;
 }
 
-.cv-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  border-color: #e0e0e0;
-}
-
-.cv-card h2 {
+.cv-card h2,
+.project-card h2,
+.study-section h2 {
   font-size: 1.4rem;
   font-weight: 600;
   color: #2c3e50;
@@ -49,34 +46,13 @@
   font-style: italic;
 }
 
-.cv-card p {
+.cv-card p,
+.project-card p,
+.study-section p {
   font-size: 1rem;
   color: #555;
   margin-bottom: 0;
   text-align: left;
-}
-
-.project-card {
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.project-card h2 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-  text-align: left;
-  line-height: 1.4;
-}
-
-.project-card p {
-  font-size: 1rem;
-  color: #555;
-  text-align: left;
-  margin-bottom: 0.5rem;
 }
 
 .cv-divider {
@@ -94,56 +70,33 @@
   opacity: 0.4;
 }
 
-.study-section {
-  border-radius: 12px;
+.project-card {
   margin-bottom: 1.5rem;
-  transition: all 0.3s ease;
-  position: relative;
-  line-height: 1.6;
-  color: #333;
 }
 
-.study-section h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-  position: relative;
-  text-align: left;
-}
-
-.study-section h2 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #2c3e50;
+.project-card h2 {
   margin-bottom: 1rem;
   text-align: left;
-  line-height: 1.4;
 }
 
-.study-section p {
-  font-size: 1rem;
-  color: #555;
-  text-align: left;
+.project-card p {
   margin-bottom: 0.5rem;
 }
 
-.certificates-section h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-  position: relative;
-  text-align: left;
+.study-section {
+  margin-bottom: 1.5rem;
 }
 
-.divider {
-  width: 100%;
-  height: 2px;
-  background: black;
-  margin: 2rem auto;
-  border-radius: 1px;
-  opacity: 0.4;
+.study-section h2 {
+  margin-bottom: 1rem;
+}
+
+.study-section p {
+  margin-bottom: 0.5rem;
+}
+
+.certificates-section {
+  margin-bottom: 40px;
 }
 
 .certificate-card {
@@ -151,8 +104,9 @@
   grid-template-columns: 1fr 2fr;
   border: solid 2px rgb(0, 0, 0);
   border-radius: 4px;
-  padding: 20px;
+  padding: 40px;
   align-items: center;
+  margin-top: 40px;
   margin-bottom: 20px;
   font-size: 0.9rem;
   text-align: center;
