@@ -20,10 +20,10 @@
   max-width: 500px;
   margin: 40px auto;
   padding: 20px;
-  background-color: rgb(30, 59, 174, 0.1);
+  background-color: rgb(3, 74, 166, 0.1);
   border: 2px solid #ddd;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(30, 59, 174, 0.3);
+  box-shadow: 0 0 10px rgba(3, 74, 166, 0.3);
 }
 
 .contact-form form {

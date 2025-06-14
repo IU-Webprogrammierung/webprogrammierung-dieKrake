@@ -37,10 +37,10 @@
 
 .tech-card,
 .soft-skills-card {
-  background-color: rgb(30, 59, 174, 0.1);
+  background-color: rgb(3, 74, 166, 0.1);
   border: 2px solid #ddd;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(30, 59, 174, 0.3);
+  box-shadow: 0 0 10px rgba(3, 74, 166, 0.3);
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 1.5rem;

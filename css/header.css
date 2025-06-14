@@ -1,12 +1,14 @@
-/* Header Styles */
 .header {
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
-    rgb(30, 59, 174) 0%,
+    rgb(3, 74, 166) 0%,
     rgb(132, 159, 245) 20%,
     rgb(212, 224, 255) 70%,
     rgb(245, 248, 255) 100%
   );
+  Design Versuch
+  */
+
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -32,8 +34,10 @@
 }
 
 .navigation-list-element a {
-  color: #333333;
-  opacity: 0.8;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  color: black;
+  opacity: 1;
+  font-weight: 600;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -41,9 +45,10 @@
 }
 
 .email-link {
-  color: #333333;
+  color: black;
+  font-weight: 500;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .email-link:hover {
@@ -61,7 +66,7 @@
 .burger-line {
   width: 25px;
   height: 3px;
-  background-color: rgb(30, 59, 174);
+  background-color: rgb(3, 74, 166);
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin: 3px 0;
@@ -84,6 +89,7 @@
 /* Mobile Navigation */
 .mobile-nav {
   font-family: "Courier New", Courier, monospace;
+  text-align: center;
   font-size: larger;
   font-weight: 600;
   display: none;
@@ -92,9 +98,9 @@
   left: 0;
   width: 100%;
   background: white;
-  box-shadow: 0 2px 5px rgba(30, 59, 174, 0.3);
+  box-shadow: 0 2px 5px rgba(3, 74, 166, 0.3);
   z-index: 1000;
-  border-bottom: 2px solid rgb(30, 59, 174);
+  border-bottom: 2px solid rgb(3, 74, 166);
   border-radius: 0 0 8px 8px;
 }
 
@@ -109,8 +115,8 @@
 }
 
 .mobile-nav-list li {
-  box-shadow: 0 2px 5px rgba(30, 59, 174, 0.2);
-  border-bottom: 2px solid rgb(30, 59, 174);
+  box-shadow: 0 2px 5px rgba(3, 74, 166, 0.2);
+  border-bottom: 2px solid rgb(3, 74, 166);
   border-radius: 8px;
 }
 

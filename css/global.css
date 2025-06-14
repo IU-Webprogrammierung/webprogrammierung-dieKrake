@@ -45,7 +45,7 @@ h4 {
 }
 
 img {
-  box-shadow: 0 0 10px rgba(30, 59, 174, 0.2);
+  box-shadow: 0 0 10px rgba(3, 74, 166, 0.2);
 }
 
 .divider {
@@ -64,15 +64,30 @@ img {
   align-items: center;
 }
 
-button {
-  background-color: rgb(30, 59, 174);
-  height: 40px;
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  margin-bottom: 40px;
-  color: white;
-  box-shadow: 0 0 10px rgba(30, 59, 174, 0.3);
+@media (min-width: 481px) {
+  button {
+    background-color: rgb(3, 74, 166);
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    color: white;
+    box-shadow: 0 0 10px rgba(3, 74, 166, 0.3);
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    background-color: rgb(3, 74, 166);
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    color: white;
+    box-shadow: 0 0 10px rgba(3, 74, 166, 0.3);
+  }
 }
 
 main {
