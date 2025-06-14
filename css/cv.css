@@ -110,3 +110,7 @@
   font-size: 0.9rem;
   text-align: center;
 }
+
+.certificate-card img {
+  border-radius: 8px;
+}
