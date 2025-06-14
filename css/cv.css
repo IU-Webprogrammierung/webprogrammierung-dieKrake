@@ -101,7 +101,7 @@
 .certificate-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  border: solid 2px rgb(0, 0, 0);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   padding: 40px;
   align-items: center;
