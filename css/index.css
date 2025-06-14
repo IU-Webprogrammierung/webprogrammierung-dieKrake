@@ -1,7 +1,9 @@
-.hero-section {
+.hero-section,
+.services-section {
   display: flex;
   flex-direction: column;
   line-height: 28px;
+  text-align: center;
 }
 
 .hero-text {
@@ -37,11 +39,7 @@
 }
 
 .services-section {
-  line-height: 28px;
-}
-
-.services-text {
-  text-align: center;
+  margin-top: 20px;
 }
 
 .services-text h1 {
@@ -54,7 +52,7 @@
 }
 
 .services-cards {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
