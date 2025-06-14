@@ -83,16 +83,19 @@
 
 /* Mobile Navigation */
 .mobile-nav {
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  font-weight: 600;
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   background: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(30, 59, 174, 0.3);
   z-index: 1000;
-  border-bottom: 1px solid rgb(30, 59, 174);
-  border-radius: 0 0 12px 12px;
+  border-bottom: 2px solid rgb(30, 59, 174);
+  border-radius: 0 0 8px 8px;
 }
 
 .mobile-nav.active {
@@ -106,8 +109,9 @@
 }
 
 .mobile-nav-list li {
-  border-bottom: 1px solid rgb(30, 59, 174);
-  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(30, 59, 174, 0.2);
+  border-bottom: 2px solid rgb(30, 59, 174);
+  border-radius: 8px;
 }
 
 .mobile-nav-list li:last-child {
