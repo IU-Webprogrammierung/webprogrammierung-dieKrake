@@ -12,10 +12,12 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .logo img {
   height: 70px;
+  box-shadow: none;
 }
 
 .navigation-header {
@@ -60,6 +62,8 @@
   width: 25px;
   height: 3px;
   background-color: rgb(30, 59, 174);
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin: 3px 0;
   transition: 0.3s;
 }
