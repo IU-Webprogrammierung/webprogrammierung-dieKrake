@@ -22,13 +22,6 @@
   margin-bottom: 1rem;
 }
 
-.image-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .services-image {
   margin-bottom: 2rem;
   margin-top: 0.5rem;

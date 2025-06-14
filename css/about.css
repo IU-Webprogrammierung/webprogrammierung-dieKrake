@@ -1,11 +1,32 @@
-.about {
-  background-color: beige;
-}
-
-.motivation {
-  background-color: cadetblue;
-}
-
+.about,
+.motivation,
 .contact-about {
-  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about h1,
+.motivation h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.about p,
+.motivation p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-image,
+.motivation-image {
+  margin-top: 0.5rem;
+  min-width: 300px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: contain;
+  align-self: center;
 }

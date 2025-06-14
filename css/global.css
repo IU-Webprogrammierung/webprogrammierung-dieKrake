@@ -57,6 +57,13 @@ img {
   opacity: 0.4;
 }
 
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
   background-color: rgb(30, 59, 174);
   height: 40px;
