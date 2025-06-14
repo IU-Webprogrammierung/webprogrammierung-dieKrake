@@ -19,7 +19,7 @@
 .services-text h2 {
   font-size: 1rem;
   color: #555;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .image-container {
@@ -30,8 +30,8 @@
 }
 
 .services-image {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
   min-width: 300px;
   max-width: 600px;
   width: 100%;
