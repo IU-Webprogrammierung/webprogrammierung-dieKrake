@@ -4,6 +4,10 @@
   color: #333;
 }
 
+.cv-section {
+  margin-top: 40px;
+}
+
 .cv-section h1,
 .study-section h1,
 .certificates-section h1 {
@@ -52,6 +56,67 @@
   color: #555;
   margin-bottom: 0;
   text-align: left;
+}
+
+.cv-divider {
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(
+    135deg,
+    rgb(3, 74, 166) 0%,
+    rgb(132, 159, 245) 20%,
+    rgb(212, 224, 255) 70%,
+    rgb(245, 248, 255) 100%
+  );
+  margin: 2rem auto;
+  border-radius: 1px;
+  opacity: 0.4;
+}
+
+.project-card {
+  margin-bottom: 1.5rem;
+}
+
+.project-card h2 {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.project-card p {
+  margin-bottom: 0.5rem;
+}
+
+.study-section {
+  margin-bottom: 1.5rem;
+}
+
+.study-section h2 {
+  margin-bottom: 1rem;
+}
+
+.study-section p {
+  margin-bottom: 0.5rem;
+}
+
+.certificates-section {
+  margin-bottom: 40px;
+}
+
+.certificate-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  padding: 40px;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: --font-size-cv-p;
+  text-align: center;
+}
+
+.certificate-card img {
+  border-radius: 8px;
 }
 
 @media (max-width: 480px) {
@@ -108,71 +173,48 @@
     --font-size-cv-p: 1.3rem;
   }
   .cv-section {
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     padding-left: 60px;
     padding-right: 60px;
   }
-}
+  .cv-section h1,
+  .cv-section h2,
+  .cv-section h3,
+  .cv-section h4,
+  .cv-section p {
+    text-align: center;
+  }
+  .study-certificates-section {
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .study-certificates-section {
+    .divider {
+      display: none;
+    }
+  }
+  .study-section {
+    width: 50%;
+    margin-right: 20px;
+  }
+  .certificates-section {
+    width: 50%;
+    margin-left: 20px;
+  }
 
-.cv-divider {
-  width: 80%;
-  height: 2px;
-  background: linear-gradient(
-    135deg,
-    rgb(3, 74, 166) 0%,
-    rgb(132, 159, 245) 20%,
-    rgb(212, 224, 255) 70%,
-    rgb(245, 248, 255) 100%
-  );
-  margin: 2rem auto;
-  border-radius: 1px;
-  opacity: 0.4;
-}
-
-.project-card {
-  margin-bottom: 1.5rem;
-}
-
-.project-card h2 {
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.project-card p {
-  margin-bottom: 0.5rem;
-}
-
-.study-section {
-  margin-bottom: 1.5rem;
-}
-
-.study-section h2 {
-  margin-bottom: 1rem;
-}
-
-.study-section p {
-  margin-bottom: 0.5rem;
-}
-
-.certificates-section {
-  margin-bottom: 40px;
-}
-
-.certificate-card {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  padding: 40px;
-  align-items: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.certificate-card img {
-  border-radius: 8px;
+  .certificate-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .certificate-card p {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .certificate-card a {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
