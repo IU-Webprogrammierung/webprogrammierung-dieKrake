@@ -2,9 +2,13 @@
 .services-section {
   display: flex;
   flex-direction: column;
-  line-height: 28px;
+  line-height: var(--font-line-height-hero);
   text-align: center;
   align-items: center;
+}
+
+.services-section {
+  line-height: var(--font-line-height-services);
 }
 
 .hero-text {
@@ -12,12 +16,119 @@
   margin-top: 40px;
 }
 
+@media (max-width: 480px) {
+  :root {
+    --font-line-height-hero: 28px;
+    --font-line-height-services: 20px;
+    --font-size-hero-h1: 1rem;
+    --font-size-hero-h2: 1.2rem;
+    --font-size-services-h1: 1.2rem;
+    --font-size-services-h2: 1rem;
+    --font-size-services-h3: 0.9rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+  :root {
+    --font-line-height-hero: 32px;
+    --font-line-height-services: 24px;
+    --font-size-hero-h1: 1.3rem;
+    --font-size-hero-h2: 1.5rem;
+    --font-size-services-h1: 1.5rem;
+    --font-size-services-h2: 1.3rem;
+    --font-size-services-h3: 1.2rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  :root {
+    --font-line-height-hero: 32px;
+    --font-line-height-services: 24px;
+    --font-size-hero-h1: 1.4rem;
+    --font-size-hero-h2: 1.6rem;
+    --font-size-services-h1: 1.6rem;
+    --font-size-services-h2: 1.4rem;
+    --font-size-services-h3: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --font-line-height-hero: 36px;
+    --font-line-height-services: 28px;
+    --font-size-hero-h1: 1.4rem;
+    --font-size-hero-h2: 1.6rem;
+    --font-size-services-h1: 1.6rem;
+    --font-size-services-h2: 1.4rem;
+    --font-size-services-h3: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-line-height-hero: 36px;
+    --font-line-height-services: 28px;
+    --font-size-hero-h1: 1.4rem;
+    --font-size-hero-h2: 1.6rem;
+    --font-size-services-h1: 1.6rem;
+    --font-size-services-h2: 1.4rem;
+    --font-size-services-h3: 1.3rem;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    height: 450px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 100px;
+  }
+  .hero-section img {
+    align-self: center;
+    max-height: 100%;
+    width: auto;
+    object-fit: cover;
+    margin: 0 0 0 auto;
+  }
+  .hero-text {
+    width: 60%;
+    text-align: left;
+    margin-top: 0px;
+    padding-right: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .services-section {
+    background-color: aqua;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
 .hero-text h1 {
-  font-size: 1rem;
+  font-size: var(--font-size-hero-h1);
 }
 
 .hero-text h2 {
-  font-size: 1.2rem;
+  font-size: var(--font-size-hero-h2);
+}
+
+.services-text h1 {
+  font-size: var(--font-size-services-h1);
+}
+
+.services-text h3 {
+  font-size: var(--font-size-services-h3);
+}
+
+.services-card h2 {
+  font-size: var(--font-size-services-h2);
+}
+
+.services-card h3 {
+  font-size: var(--font-size-services-h3);
 }
 
 .hero-image {
@@ -31,15 +142,6 @@
 
 .services-section {
   margin-top: 20px;
-}
-
-.services-text h1 {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-
-.services-text h3 {
-  font-size: 1rem;
 }
 
 .services-cards {
@@ -59,15 +161,6 @@
   box-shadow: 0 0 10px rgba(3, 74, 166, 0.3);
   padding: 16px;
   align-items: center;
-}
-
-.services-card h2 {
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.services-card h3 {
-  font-size: 0.9rem;
 }
 
 /* === Ungerade Karten === */
