@@ -1,13 +1,13 @@
 .cv-section,
 .study-section {
-  line-height: 1.6;
+  line-height: var(--font-line-height-cv);
   color: #333;
 }
 
 .cv-section h1,
 .study-section h1,
 .certificates-section h1 {
-  font-size: 1.8rem;
+  font-size: var(--font-size-cv-h1);
   font-weight: 700;
   color: #2c3e50;
   margin-bottom: 1rem;
@@ -21,7 +21,7 @@
 .cv-card h2,
 .project-card h2,
 .study-section h2 {
-  font-size: 1.4rem;
+  font-size: var(--font-size-cv-h2);
   font-weight: 600;
   color: #2c3e50;
   margin-bottom: 0.5rem;
@@ -29,7 +29,7 @@
 }
 
 .cv-card h3 {
-  font-size: 1.1rem;
+  font-size: var(--font-size-cv-h3);
   font-weight: 500;
   color: rgb(3, 74, 166);
   margin-bottom: 0.3rem;
@@ -37,7 +37,7 @@
 }
 
 .cv-card h4 {
-  font-size: 0.95rem;
+  font-size: var(--font-size-cv-h4);
   font-weight: 400;
   color: #7f8c8d;
   margin-bottom: 1rem;
@@ -48,10 +48,72 @@
 .cv-card p,
 .project-card p,
 .study-section p {
-  font-size: 1rem;
+  font-size: var(--font-size-cv-p);
   color: #555;
   margin-bottom: 0;
   text-align: left;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-line-height-cv: 28px;
+    --font-size-cv-h1: 1rem;
+    --font-size-cv-h2: 1.2rem;
+    --font-size-cv-h3: 1rem;
+    --font-size-cv-h4: 0.9rem;
+    --font-size-cv-p: 0.9rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+  :root {
+    --font-line-height-cv: 32px;
+    --font-size-cv-h1: 1.3rem;
+    --font-size-cv-h2: 1.5rem;
+    --font-size-cv-h3: 1.2rem;
+    --font-size-cv-h4: 1rem;
+    --font-size-cv-p: 1rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  :root {
+    --font-line-height-cv: 32px;
+    --font-size-cv-h1: 1.4rem;
+    --font-size-cv-h2: 1.6rem;
+    --font-size-cv-h3: 1.3rem;
+    --font-size-cv-h4: 1.1rem;
+    --font-size-cv-p: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --font-line-height-cv: 34px;
+    --font-size-cv-h1: 1.4rem;
+    --font-size-cv-h2: 1.7rem;
+    --font-size-cv-h3: 1.4rem;
+    --font-size-cv-h4: 1.2rem;
+    --font-size-cv-p: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-line-height-cv: 36px;
+    --font-size-cv-h1: 1.5rem;
+    --font-size-cv-h2: 1.8rem;
+    --font-size-cv-h3: 1.5rem;
+    --font-size-cv-h4: 1.3rem;
+    --font-size-cv-p: 1.3rem;
+  }
+  .cv-section {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .cv-divider {
