@@ -1,5 +1,7 @@
 .tech-section,
-.soft-skills-section {
+.soft-skills-section,
+.tech-cards-section,
+.soft-skills-cards-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,20 +9,29 @@
   color: #2c3e50;
 }
 
+@media (min-width: 640px) and (max-width: 1023px) {
+  .tech-section,
+  .soft-skills-section {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .tech-section h1,
 .soft-skills-section h1 {
-  font-size: 1.8rem;
+  margin-top: 40px;
+  font-size: var(--font-size-skills-h1);
   font-weight: 700;
   color: #2c3e50;
-  margin-bottom: var(--font-size-skills-h1);
 }
 
 .tech-section h2,
 .soft-skills-section h2 {
-  font-size: 1.4rem;
+  font-size: var(--font-size-skills-h2);
   font-weight: 600;
   color: #2c3e50;
-  margin-bottom: var(--font-size-skills-h2);
+  margin-bottom: 60px;
   margin-top: 0;
 }
 
@@ -117,5 +128,33 @@
     --font-size-skills-cards-h2: 1.8rem;
     --font-size-skills-cards-h3: 1.5rem;
     --font-size-skills-cards-p: 1.4rem;
+  }
+  .tech-section,
+  .soft-skills-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .tech-cards-section,
+  .soft-skills-cards-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    margin-bottom: 60px;
+
+    .tech-card,
+    .soft-skills-card {
+      height: 100%;
+      padding: 40px 40px 0 40px;
+      margin-left: 20px;
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .divider {
+      display: none;
+    }
   }
 }
