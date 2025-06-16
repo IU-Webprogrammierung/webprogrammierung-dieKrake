@@ -133,7 +133,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .navigation-header {
     display: none;
   }
@@ -151,7 +151,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .burger-menu {
     display: none !important;
   }
