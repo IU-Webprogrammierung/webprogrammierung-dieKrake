@@ -1,20 +1,22 @@
 .about,
 .motivation,
-.contact-about {
+.contact-about,
+.text-container {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .about h1,
 .motivation h1 {
-  font-size: 1.8rem;
+  font-size: var(--font-size-about-h1);
   font-weight: 700;
 }
 
 .about p,
 .motivation p {
-  font-size: 1rem;
+  font-size: var(--font-size-about-p);
   color: #555;
   margin-bottom: 1rem;
   line-height: 1.6;
@@ -29,4 +31,127 @@
   border-radius: 16px;
   object-fit: contain;
   align-self: center;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-about-h1: 1.7rem;
+    --font-size-about-p: 1.1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+  :root {
+    --font-size-about-h1: 1.8rem;
+    --font-size-about-p: 1.2rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  :root {
+    --font-size-about-h1: 1.9rem;
+    --font-size-about-p: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --font-size-about-h1: 2rem;
+    --font-size-about-p: 1.4rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .contact-about h2 {
+    display: none;
+  }
+  .motivation {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-size-about-h1: 2.1rem;
+    --font-size-about-p: 1.5rem;
+  }
+  .about,
+  .motivation,
+  .contact-about {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+  }
+  .about,
+  .motivation {
+    padding: 40px 40px 40px 40px;
+  }
+  .about h1,
+  .about p,
+  .motivation h1,
+  .motivation p {
+    padding: 20px 20px 20px 20px;
+  }
+  .about {
+    flex-direction: row-reverse;
+  }
+  .about {
+    .text-container {
+      flex: 1;
+    }
+  }
+  .about {
+    .image-container {
+      flex: 1;
+    }
+  }
+  .motivation {
+    .text-container {
+      flex: 1;
+    }
+  }
+  .motivation {
+    .image-container {
+      flex: 1;
+    }
+  }
+  .contact-about {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-about {
+    .button-container {
+      padding-top: 40px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .about,
+  .motivation,
+  .contact-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .motivation {
+    margin-bottom: 40px;
+  }
+
+  .about h1,
+  .motivation h1,
+  .about p,
+  .motivation p {
+    width: 90%;
+  }
 }
