@@ -90,7 +90,6 @@
     padding-right: 60px;
     display: flex;
     flex-direction: row;
-    /* align-items: start; */
     width: 100%;
   }
   .app-section {
@@ -115,6 +114,12 @@
     flex-direction: column;
     place-items: center;
   }
+  .services-main h2 {
+    width: 80%;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -125,5 +130,11 @@
   .coaching-image-container,
   .app-image-container {
     width: 40%;
+  }
+  .services-main h2 {
+    width: 70%;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
   }
 }
