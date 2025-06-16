@@ -5,7 +5,6 @@
   align-items: center;
   text-align: center;
   color: #2c3e50;
-  line-height: 1.6;
 }
 
 .tech-section h1,
@@ -13,7 +12,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   color: #2c3e50;
-  margin-bottom: 1rem;
+  margin-bottom: var(--font-size-skills-h1);
 }
 
 .tech-section h2,
@@ -21,7 +20,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   color: #2c3e50;
-  margin-bottom: 1rem;
+  margin-bottom: var(--font-size-skills-h2);
   margin-top: 0;
 }
 
@@ -48,25 +47,75 @@
 
 .tech-card h2,
 .soft-skills-card h2 {
-  font-size: 1.4rem;
+  font-size: var(--font-size-skills-cards-h2);
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .tech-card h3,
 .soft-skills-card h3 {
-  font-size: 1.1rem;
+  font-size: var(--font-size-skills-cards-h3);
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
 .tech-card p,
 .soft-skills-card p {
-  font-size: 1rem;
+  font-size: var(--font-size-skills-cards-p);
   color: #555;
   margin-bottom: 1rem;
 }
 
 .soft-skills-section {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-skills-h1: 1.8rem;
+    --font-size-skills-h2: 1.4rem;
+    --font-size-skills-cards-h2: 1.4rem;
+    --font-size-skills-cards-h3: 1.1rem;
+    --font-size-skills-cards-p: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+  :root {
+    --font-size-skills-h1: 1.9rem;
+    --font-size-skills-h2: 1.5rem;
+    --font-size-skills-cards-h2: 1.5rem;
+    --font-size-skills-cards-h3: 1.2rem;
+    --font-size-skills-cards-p: 1.1rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  :root {
+    --font-size-skills-h1: 2rem;
+    --font-size-skills-h2: 1.6rem;
+    --font-size-skills-cards-h2: 1.6rem;
+    --font-size-skills-cards-h3: 1.3rem;
+    --font-size-skills-cards-p: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --font-size-skills-h1: 2.1rem;
+    --font-size-skills-h2: 1.7rem;
+    --font-size-skills-cards-h2: 1.7rem;
+    --font-size-skills-cards-h3: 1.4rem;
+    --font-size-skills-cards-p: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-size-skills-h1: 2.2rem;
+    --font-size-skills-h2: 1.8rem;
+    --font-size-skills-cards-h2: 1.8rem;
+    --font-size-skills-cards-h3: 1.5rem;
+    --font-size-skills-cards-p: 1.4rem;
+  }
 }
