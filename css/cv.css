@@ -111,7 +111,7 @@
   align-items: center;
   margin-top: 40px;
   margin-bottom: 20px;
-  font-size: --font-size-cv-p;
+  font-size: var(--font-size-cv-p);
   text-align: center;
 }
 
