@@ -111,17 +111,25 @@ function includeHTML(elementId, file) {
 
 ## ⌨️ Aktuelle Projektphase
 
-- [❌] Konzeptionsphase
-- [❌] Erarbeitungs-/Reflexionsphase
+- [✅] Konzeptionsphase
+- [✅] Erarbeitungs-/Reflexionsphase
 - [ ] Finalisierungsphase
 
 ## 📝 Aktuelle To-Dos
 
-- [❌] Fertigstellung der Inhalte (aktuell sind Platzhaltertexte vorhanden)
-- [❌] Optimierung der Bilder und Medien
-- [ ] CSS Styling der einzelnen Seiten
-- [ ] Ergänzung weiterer Projekte im Portfolio-Bereich
-- [ ] Responsives Design für alle Bildschirmgrößen fertigstellen
+- [✅] Fertigstellung der Inhalte (Platzhaltertexte wurden ersetzt)
+- [✅] Alt Texte der Bilder überarbeitet
+- [✅] Inhalte eingefügt
+- [✅] Bilder & Logos komprimiert
+- [✅] CSS-Styling der einzelnen Seiten abgeschlossen (weiteres Feintuning geplant)
+- [⚠️] Optimierung der Bilder und Medien (teilweise zu klein auf großen Bildschirmen)
+- [⚠️] Responsives Design teilweise abgeschlossen (Breakpoint bei 1024 px noch problematisch)
+- [ ] Verbesserung der Barrierefreiheit ‼️‼️‼️
+- [ ] Font vereinheitlichen
+- [ ] Überarbeitung der Gestaltung von Karten und Skill-Elementen
+- [ ] Überarbeitung der Desktop-Ansicht der Landing Page
+- [ ] Überarbeitung der Desktop-Ansicht der About Page
+- [ ] Überarbeitung der Desktop-Ansicht der Services Page
 
 ## 📞 Kontakt
 
