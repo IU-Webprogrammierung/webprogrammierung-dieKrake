@@ -51,7 +51,7 @@ portfolio/
 │   └── include.js            # Script für das Einbinden von Header und Footer
 │
 └── img/
-    └── Krazius Solutions Logo weiß.png  # Logo und weitere Bilder
+    └── Krazius Solutions Logo weiß.webp  # Logo und weitere Bilder
 ```
 
 ## 📄 Seitenübersicht
