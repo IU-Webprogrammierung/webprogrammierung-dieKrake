@@ -31,10 +31,21 @@
   <a
     class="email-link"
     href="mailto:kevin@krazius-solutions.com?subject=My%20Subject&body=My%20Message"
-    >kevin@
-    <br />
-    krazius-solutions.com</a
+    aria-label="E-Mail schreiben"
   >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+      />
+    </svg>
+  </a>
 
   <!-- Burger Menu Button -->
   <div class="burger-menu" id="burgerMenu">
@@ -60,4 +71,13 @@
       </li>
     </ul>
   </nav>
+  <script>
+    const burgerMenu = document.getElementById("burgerMenu");
+    const mobileNav = document.getElementById("mobileNav");
+
+    burgerMenu.addEventListener("click", () => {
+      burgerMenu.classList.toggle("active");
+      mobileNav.classList.toggle("active");
+    });
+  </script>
 </div>
