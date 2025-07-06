@@ -113,7 +113,7 @@ function includeHTML(elementId, file) {
 
 - [✅] Konzeptionsphase
 - [✅] Erarbeitungs-/Reflexionsphase
-- [ ] Finalisierungsphase
+- [❌] Finalisierungsphase
 
 ## 📝 Aktuelle To-Dos
 
@@ -122,9 +122,9 @@ function includeHTML(elementId, file) {
 - [✅] Inhalte eingefügt
 - [✅] Bilder & Logos komprimiert
 - [✅] CSS-Styling der einzelnen Seiten abgeschlossen (weiteres Feintuning geplant)
-- [⚠️] Optimierung der Bilder und Medien (teilweise zu klein auf großen Bildschirmen)
+- [✅] Optimierung der Bilder und Medien (teilweise zu klein auf großen Bildschirmen)
 - [⚠️] Responsives Design teilweise abgeschlossen (Breakpoint bei 1024 px noch problematisch)
-- [ ] Verbesserung der Barrierefreiheit ‼️‼️‼️
+- [✅] Verbesserung der Barrierefreiheit
 - [ ] Font vereinheitlichen
 - [ ] Überarbeitung der Gestaltung von Karten und Skill-Elementen
 - [ ] Überarbeitung der Desktop-Ansicht der Landing Page
