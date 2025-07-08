@@ -155,7 +155,7 @@
     --font-size-hero-h1: 1.3rem;
     --font-size-hero-h2: 1.9rem;
     --font-size-hero-h3: 1.5rem;
-    --font-size-services-h1: 1.6rem;
+    --font-size-services-h1: 1.1rem;
     --font-size-services-h2: 1.4rem;
     --font-size-services-h3: 1.3rem;
   }
@@ -208,11 +208,17 @@
     gap: 20px;
     margin-bottom: 40px;
   }
-  .services-text h2 {
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
+  .services-text {
+    text-align: left;
+  }
+  .services-text h1 {
+    margin-bottom: 2px;
+  }
+  #services-h2 {
+    margin-top: 0px;
+    width: 50%;
     margin-bottom: 40px;
+    font-size: 2.3rem;
   }
   .services-card h3 {
     padding-top: 20px;
@@ -250,7 +256,7 @@
 }
 
 .services-text h2 {
-  font-size: var(--font-size-services-h3);
+  font-size: var(--font-size-services-h2);
 }
 
 .services-card h2 {
