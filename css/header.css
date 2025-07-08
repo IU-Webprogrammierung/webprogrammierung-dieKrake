@@ -1,14 +1,4 @@
 .header {
-  /* background: linear-gradient(
-    135deg,
-    rgb(3, 74, 166) 0%,
-    rgb(132, 159, 245) 20%,
-    rgb(212, 224, 255) 70%,
-    rgb(245, 248, 255) 100%
-  );
-  Design Versuch
-  */
-
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -90,51 +80,60 @@
 .mobile-nav {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: larger;
+  font-size: 1.1rem;
   font-weight: 600;
   position: absolute;
   top: 100%;
   right: 0;
-  width: 50%;
-  background: white;
-  box-shadow: 0 2px 5px rgba(3, 74, 166, 0.3);
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(3, 74, 166, 0.2);
   z-index: 1000;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 12px 12px;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.4s ease, box-shadow 0.3s ease;
 }
 
 .mobile-nav.active {
-  max-height: 500px;
+  max-height: 600px;
   display: block;
+  box-shadow: 0 12px 40px rgba(3, 74, 166, 0.3);
 }
 
 .mobile-nav-list {
   list-style: none;
-  padding: 0;
+  padding: 0.5rem 1rem;
   margin: 0;
 }
 
 .mobile-nav-list li {
-  box-shadow: 0 2px 5px rgba(3, 74, 166, 0.2);
+  margin: 0.5rem 0;
   border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
-.mobile-nav-list li:last-child {
-  border-bottom: none;
+.mobile-nav-list li:hover {
+  background-color: rgba(3, 74, 166, 0.1);
 }
 
 .mobile-nav-list a {
   display: block;
-  color: black;
+  color: #034aa6;
   text-decoration: none;
-  padding: 1rem 2rem;
-  transition: background-color 0.3s ease;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.mobile-nav-list a:hover {
+  color: #012f5c;
 }
 
 /* Responsive Design */
-@media (max-width: 700px) {
+
+@media (max-width: 480px) {
   .mobile-nav {
     width: 100%;
   }
