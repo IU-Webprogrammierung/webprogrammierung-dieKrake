@@ -2,13 +2,8 @@
 .services-section {
   display: flex;
   flex-direction: column;
-  line-height: var(--font-line-height-hero);
   text-align: center;
   align-items: center;
-}
-
-.services-section {
-  line-height: var(--font-line-height-services);
 }
 
 .hero-text {
@@ -26,37 +21,90 @@
 
 @media (max-width: 480px) {
   :root {
-    --font-line-height-hero: 28px;
-    --font-line-height-services: 20px;
-    --font-size-hero-h1: 1rem;
+    --font-size-hero-h1: 0.9rem;
     --font-size-hero-h2: 1.2rem;
+    --font-size-hero-h3: 0.9rem;
     --font-size-services-h1: 1.2rem;
-    --font-size-services-h2: 1rem;
+    --font-size-services-h2: 0.9rem;
     --font-size-services-h3: 0.9rem;
+  }
+
+  .hero-text h1 {
+    margin-bottom: -7px;
+    color: rgb(95, 111, 131);
+  }
+  .hero-text h2 {
+    margin-bottom: 10px;
+  }
+
+  .hero-text h3 {
+    margin-bottom: 30px;
+  }
+
+  .services-text h2 {
+    line-height: 18px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
   :root {
-    --font-line-height-hero: 32px;
-    --font-line-height-services: 24px;
-    --font-size-hero-h1: 1.3rem;
+    --font-size-hero-h1: 1.2rem;
     --font-size-hero-h2: 1.5rem;
+    --font-size-hero-h3: 1.1rem;
     --font-size-services-h1: 1.5rem;
     --font-size-services-h2: 1.3rem;
     --font-size-services-h3: 1.2rem;
+  }
+
+  .hero-text h1 {
+    margin-bottom: -10px;
+    color: rgb(95, 111, 131);
+  }
+  .hero-text h2 {
+    margin-bottom: 10px;
+  }
+
+  .hero-text h3 {
+    margin-bottom: 30px;
+  }
+
+  .services-text h2 {
+    line-height: 24px;
+  }
+
+  .hero-text {
+    width: 90%;
+  }
+
+  .services-text {
+    width: 90%;
   }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
   :root {
-    --font-line-height-hero: 32px;
-    --font-line-height-services: 24px;
     --font-size-hero-h1: 1.4rem;
-    --font-size-hero-h2: 1.6rem;
+    --font-size-hero-h2: 1.7rem;
+    --font-size-hero-h3: 1.3rem;
     --font-size-services-h1: 1.6rem;
     --font-size-services-h2: 1.4rem;
     --font-size-services-h3: 1.3rem;
+  }
+
+  .hero-text h1 {
+    margin-bottom: -10px;
+    color: rgb(95, 111, 131);
+  }
+  .hero-text h2 {
+    margin-bottom: 10px;
+  }
+
+  .hero-text h3 {
+    margin-bottom: 30px;
+  }
+
+  .services-text h2 {
+    line-height: 26px;
   }
 }
 
@@ -77,22 +125,36 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   :root {
-    --font-line-height-hero: 36px;
-    --font-line-height-services: 28px;
-    --font-size-hero-h1: 1.4rem;
-    --font-size-hero-h2: 1.6rem;
+    --font-size-hero-h1: 1.5rem;
+    --font-size-hero-h2: 1.8rem;
+    --font-size-hero-h3: 1.4rem;
     --font-size-services-h1: 1.6rem;
     --font-size-services-h2: 1.4rem;
     --font-size-services-h3: 1.3rem;
+  }
+
+  .hero-text h1 {
+    margin-bottom: -10px;
+    color: rgb(95, 111, 131);
+  }
+  .hero-text h2 {
+    margin-bottom: 10px;
+  }
+
+  .hero-text h3 {
+    margin-bottom: 30px;
+  }
+
+  .services-text h2 {
+    line-height: 28px;
   }
 }
 
 @media (min-width: 1024px) {
   :root {
-    --font-line-height-hero: 36px;
-    --font-line-height-services: 28px;
-    --font-size-hero-h1: 1.4rem;
-    --font-size-hero-h2: 1.6rem;
+    --font-size-hero-h1: 1.3rem;
+    --font-size-hero-h2: 1.9rem;
+    --font-size-hero-h3: 1.5rem;
     --font-size-services-h1: 1.6rem;
     --font-size-services-h2: 1.4rem;
     --font-size-services-h3: 1.3rem;
@@ -124,12 +186,16 @@
     justify-content: center;
   }
   .hero-text h1 {
-    margin-bottom: 0;
+    margin-bottom: 4px;
+    color: rgb(95, 111, 131);
   }
-
   .hero-text h2 {
-    padding-right: 200px;
     margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .hero-text h3 {
+    margin-top: 0;
+    width: 90%;
   }
   .services-section {
     padding-left: 60px;
@@ -155,12 +221,28 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .hero-text {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .hero-text {
+    width: 60%;
+  }
+}
+
 .hero-text h1 {
   font-size: var(--font-size-hero-h1);
 }
 
 .hero-text h2 {
   font-size: var(--font-size-hero-h2);
+}
+
+.hero-text h3 {
+  font-size: var(--font-size-hero-h3);
 }
 
 .services-text h1 {
@@ -253,7 +335,7 @@
 
 @media (min-width: 1400px) {
   .hero-image {
-    min-width: 450px;
+    min-width: 40px;
     max-width: 800px;
   }
 }
