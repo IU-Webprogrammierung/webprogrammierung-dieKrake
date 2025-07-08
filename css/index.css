@@ -181,7 +181,7 @@
 
 .hero-image {
   min-width: 300px;
-  max-width: 600px;
+  max-width: 400px;
   width: 100%;
   border-radius: 12px;
   object-fit: contain;
@@ -235,7 +235,6 @@
   text-align: center;
 }
 
-/* === Gerade Karten === */
 @media (max-width: 1024px) {
   .services-card:nth-child(even) {
     grid-template-columns: 2fr 1fr;
@@ -249,5 +248,12 @@
     grid-column: 1;
     text-align: right;
     justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero-image {
+    min-width: 450px;
+    max-width: 800px;
   }
 }
