@@ -9,6 +9,27 @@
   color: #2c3e50;
 }
 
+/* Sticky Scroll effect */
+.tech-section .soft-skills-section {
+  position: relative;
+  min-height: 100vh;
+}
+.tech-section h1,
+.soft-skills-section h1 {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 40px 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(245, 248, 255);
+}
+#end-card {
+  margin-bottom: 80px;
+}
+
 @media (min-width: 640px) and (max-width: 1023px) {
   .tech-section,
   .soft-skills-section {
@@ -20,6 +41,7 @@
 
 .tech-section h1,
 .soft-skills-section h1 {
+  width: 110%;
   margin-top: 40px;
   font-size: var(--font-size-skills-h1);
   font-weight: 700;
