@@ -66,7 +66,7 @@
             </p>
           </tech-card>
 
-          <tech-card class="tech-card" id="end-card">
+          <tech-card class="tech-card">
             <h2>Express.js</h2>
             <h3>Robuste APIs für deine Anwendungen.</h3>
             <p>
@@ -119,4 +119,33 @@
     </main>
     <footer id="footer"></footer>
   </body>
+  <script>
+    // Scroll-Animationen für Tech und Soft Skills Cards
+    function initCardAnimations() {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      const cards = document.querySelectorAll(".tech-card, .soft-skills-card");
+      cards.forEach((card) => {
+        observer.observe(card);
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initCardAnimations);
+    } else {
+      initCardAnimations();
+    }
+  </script>
 </html>
