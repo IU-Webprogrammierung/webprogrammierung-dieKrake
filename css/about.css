@@ -33,6 +33,13 @@
   align-self: center;
 }
 
+@media (min-width: 481px) and (max-width: 639px) {
+  .about,
+  .motivation {
+    margin-top: 2rem;
+  }
+}
+
 @media (max-width: 480px) {
   :root {
     --font-size-about-h1: 1.7rem;
@@ -61,7 +68,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1399px) {
   .contact-about h2 {
     display: none;
   }
@@ -75,9 +82,11 @@
     --font-size-about-h1: 2.1rem;
     --font-size-about-p: 1.5rem;
   }
+}
+
+@media (min-width: 1400px) {
   .about,
-  .motivation,
-  .contact-about {
+  .motivation {
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -86,7 +95,7 @@
   }
   .about,
   .motivation {
-    padding: 40px 40px 40px 40px;
+    padding: 40px 40px 0px 40px;
   }
   .about h1,
   .about p,
@@ -119,11 +128,9 @@
   }
   .contact-about {
     display: flex;
-    justify-content: space-between;
   }
   .contact-about {
     .button-container {
-      padding-top: 40px;
       height: 100%;
       display: flex;
       align-items: center;
@@ -131,7 +138,7 @@
   }
 }
 
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 640px) and (max-width: 1399px) {
   .about,
   .motivation,
   .contact-about {
@@ -140,8 +147,8 @@
     align-items: center;
     text-align: center;
     width: 80%;
-    max-width: 800px;
     margin: auto;
+    margin-top: 4rem;
   }
 
   .motivation {
@@ -154,4 +161,12 @@
   .motivation p {
     width: 90%;
   }
+}
+
+#about-text {
+  margin-left: 5vw;
+}
+
+#motivation-text {
+  margin-right: 5vw;
 }
