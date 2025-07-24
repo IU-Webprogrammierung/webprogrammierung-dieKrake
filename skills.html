@@ -11,6 +11,7 @@
     <title>Fähigkeiten - Krazius-Solutions</title>
     <script src="js/include.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/card-animation.js"></script>
     <link rel="stylesheet" href="./css/skills.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/header.css" />
@@ -22,7 +23,7 @@
       <section class="tech-section">
         <h1>Tech Stack</h1>
         <div class="tech-cards-section">
-          <tech-card class="tech-card">
+          <tech-card class="tech-card animate-card">
             <h2>Next.js</h2>
             <h3>Das Framework für reaktionsschnelle Webanwendungen.</h3>
             <p>
@@ -33,7 +34,7 @@
             </p>
           </tech-card>
 
-          <tech-card class="tech-card">
+          <tech-card class="tech-card animate-card">
             <h2>Tailwind CSS</h2>
             <h3>Schnelles und flexibles UI-Design.</h3>
             <p>
@@ -44,7 +45,7 @@
             </p>
           </tech-card>
 
-          <tech-card class="tech-card">
+          <tech-card class="tech-card animate-card">
             <h2>TypeScript</h2>
             <h3>Sicherheit und Skalierbarkeit für deinen Code.</h3>
             <p>
@@ -55,7 +56,7 @@
             </p>
           </tech-card>
 
-          <tech-card class="tech-card">
+          <tech-card class="tech-card animate-card">
             <h2>Supabase</h2>
             <h3>Die Open-Source-Alternative zu Firebase.</h3>
             <p>
@@ -66,7 +67,7 @@
             </p>
           </tech-card>
 
-          <tech-card class="tech-card">
+          <tech-card class="tech-card animate-card">
             <h2>Express.js</h2>
             <h3>Robuste APIs für deine Anwendungen.</h3>
             <p>
@@ -81,7 +82,7 @@
       <section class="soft-skills-section">
         <h1>Soft Skills</h1>
         <div class="soft-skills-cards-section">
-          <softskills-card class="soft-skills-card">
+          <softskills-card class="soft-skills-card animate-card">
             <h2>Kommunikation auf Augenhöhe</h2>
             <h3>Für ein angenehmes und produktives Miteinander.</h3>
             <p>
@@ -92,7 +93,7 @@
             </p>
           </softskills-card>
 
-          <softskills-card class="soft-skills-card">
+          <softskills-card class="soft-skills-card animate-card">
             <h2>Coaching-Erfahrung</h2>
             <h3>Gezielte Unterstützung für Lernende.</h3>
             <p>
@@ -103,7 +104,7 @@
               Lernblockaden zu überwinden und Fortschritte zu erzielen.
             </p>
           </softskills-card>
-          <softskills-card class="soft-skills-card">
+          <softskills-card class="soft-skills-card animate-card">
             <h2>Didaktisches Geschick</h2>
             <h3>Komplexe Themen verständlich vermitteln.</h3>
             <p>
@@ -119,33 +120,4 @@
     </main>
     <footer id="footer"></footer>
   </body>
-  <script>
-    // Scroll-Animationen für Tech und Soft Skills Cards
-    function initCardAnimations() {
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-in");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, observerOptions);
-
-      const cards = document.querySelectorAll(".tech-card, .soft-skills-card");
-      cards.forEach((card) => {
-        observer.observe(card);
-      });
-    }
-
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initCardAnimations);
-    } else {
-      initCardAnimations();
-    }
-  </script>
 </html>

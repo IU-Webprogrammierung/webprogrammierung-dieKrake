@@ -82,6 +82,11 @@ img {
     color: white;
     box-shadow: 0 0 10px rgba(3, 74, 166, 0.3);
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  button:hover {
+    background-color: rgb(3, 75, 170);
+    scale: 1.1;
   }
 }
 
@@ -96,6 +101,11 @@ img {
     color: white;
     box-shadow: 0 0 10px rgba(3, 74, 166, 0.3);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  button:hover {
+    background-color: rgb(3, 75, 170);
+    scale: 1.1;
   }
 }
 
