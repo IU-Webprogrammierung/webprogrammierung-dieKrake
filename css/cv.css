@@ -126,6 +126,26 @@ a > p {
   border-radius: 8px;
 }
 
+/* Animations */
+.cv-section,
+.certificates-section,
+.study-certificates-section {
+  transform: translateY(200px);
+  opacity: 0;
+
+  transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 1s ease-in;
+
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+.cv-section.animate-in,
+.certificates-section.animate-in,
+.study-certificates-section.animate-in {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media (max-width: 480px) {
   :root {
     --font-line-height-cv: 28px;
