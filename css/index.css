@@ -20,20 +20,57 @@
   padding: 32px 16px;
 }
 
-/* Scroll Animation für Cards */
-.services-cards {
-  /* Animation Anfangszustand */
+/* Scroll Animation für Elements */
+.services-card {
   transform: scale(0.5);
   opacity: 0;
   transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Animierter Zustand */
-.services-cards.animate-in {
+.services-card.animate-in {
   transform: scale(1);
   opacity: 1;
 }
 
+.hero-image {
+  transform: translateX(200px);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.hero-image.animate-in {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.hero-text {
+  transform: translateX(-200px);
+  opacity: 0;
+
+  /* this fixes transition style */
+  transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 1s ease-out;
+
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  /* ------ */
+}
+.hero-text.animate-in {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.services-text {
+  opacity: 0;
+
+  /* this fixes transition style */
+  transition: opacity 1s ease-in;
+
+  will-change: opacity;
+  backface-visibility: hidden;
+  /* ------ */
+}
+.services-text.animate-in {
+  opacity: 1;
+}
 @media (max-width: 480px) {
   :root {
     --font-size-hero-h1: 0.9rem;
@@ -306,11 +343,9 @@
   background-color: rgb(243, 247, 254);
   border-radius: 16px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: 24px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-header h2 {

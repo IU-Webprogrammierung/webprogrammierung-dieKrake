@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
+    window.scrollTo(0, 0);
     // // Close mobile menu when clicking outside
     // document.addEventListener("click", function (e) {
     //   console.log("Document clicked");
