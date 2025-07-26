@@ -16,7 +16,7 @@
 
 /* Dark theme */
 [data-theme="dark"] {
-  --bg-color: rgb(83, 80, 80);
+  --bg-color: rgb(0, 0, 0);
   --text-color: #ffffff;
   --card-bg: #2d2d2d;
   --border-color: #404040;
@@ -24,45 +24,43 @@
   --button-text: #ffffff;
 }
 
-/* Design 2: Icon Button mit Glow */
+/* Theme toggle */
 .theme-toggle-glow {
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  background-color: rgb(245, 248, 255);
+  color: #333333;
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 12px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
-  position: relative;
   overflow: hidden;
+  margin-bottom: 0;
+  box-shadow: 0px 1px 2px rgb(18, 18, 18);
 }
 
 .theme-toggle-glow:hover {
   transform: translateY(-2px);
-  box-shadow: 7px 7px 15px #d1d1d1, -7px -7px 15px #ffffff,
-    0 0 20px rgba(102, 126, 234, 0.3);
+  background-color: #ffffff;
 }
 
 .theme-toggle-glow::before {
-  content: "🌙";
+  content: "☾";
   transition: all 0.3s ease;
 }
 
 [data-theme="dark"] .theme-toggle-glow {
-  background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
-  box-shadow: 5px 5px 10px #0f0f0f, -5px -5px 10px #3a3a3a;
-  color: #ffeaa7;
+  background-color: #333333;
+  color: #ffffff;
 }
 
 [data-theme="dark"] .theme-toggle-glow:hover {
-  box-shadow: 7px 7px 15px #0f0f0f, -7px -7px 15px #3a3a3a,
-    0 0 20px rgba(255, 234, 167, 0.3);
+  background-color: #333333;
 }
 
 [data-theme="dark"] .theme-toggle-glow::before {
-  content: "☀️";
+  content: "☼";
 }
 
 body {
