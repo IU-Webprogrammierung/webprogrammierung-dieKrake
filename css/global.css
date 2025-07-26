@@ -17,6 +17,7 @@
   --services-card-header-h2: #111827;
   --services-card-header-p: #374151;
   --services-card-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  --gradient-bg: linear-gradient(135deg, #e4efff 0%, #ffffff 100%);
 }
 
 /* Dark theme */
@@ -32,6 +33,7 @@
   --services-card-header-h2: #f7f7f7;
   --services-card-header-p: #ffffff;
   --services-card-box-shadow: 0px 2px 4px #4f4f4f;
+  --gradient-bg: linear-gradient(135deg, #505c70 0%, #424242 100%);
 }
 
 /* Theme toggle */
