@@ -24,7 +24,7 @@
 [data-theme="dark"] {
   --bg-color: rgb(35, 35, 35);
   --text-color-main: #f7f7f7;
-  --text-color-secondary: #333333;
+  --text-color-secondary: #c8c8c8;
   --box-shadow: 0px 2px 5px rgba(230, 230, 230, 0.774);
   --box-shadow-fine: 0px 2px 5px rgba(3, 74, 166, 0.618);
   --org-blue: rgb(3, 74, 166);
