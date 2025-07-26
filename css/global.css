@@ -25,7 +25,7 @@
   --text-color-main: #f7f7f7;
   --text-color-secondary: #333333;
   --box-shadow: 0px 2px 5px rgba(230, 230, 230, 0.774);
-  --box-shadow-fine: 0px 2px 5px rgba(255, 255, 255, 0.618);
+  --box-shadow-fine: 0px 2px 5px rgba(3, 74, 166, 0.618);
   --org-blue: rgb(3, 74, 166);
   --h1-gray: rgb(113, 129, 150);
   --services-card-bg: #333333;
@@ -48,6 +48,12 @@
   overflow: hidden;
   margin-bottom: 0;
   box-shadow: 0px 1px 2px rgb(18, 18, 18);
+}
+
+@media (min-width: 1024px) {
+  .theme-toggle-glow {
+    margin-right: 2rem;
+  }
 }
 
 .theme-toggle-glow:hover {

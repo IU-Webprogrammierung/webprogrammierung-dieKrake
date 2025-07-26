@@ -27,27 +27,31 @@
     </ul>
   </nav>
 
-  <button onclick="toggleTheme()" class="theme-toggle-glow"></button>
+  <div class="switch-mail-container">
+    <button onclick="toggleTheme()" class="theme-toggle-glow"></button>
 
-  <!-- Email Link (Desktop only) -->
-  <a
-    class="email-link"
-    href="mailto:kevin@krazius-solutions.com?subject=My%20Subject&body=My%20Message"
-    aria-label="E-Mail schreiben"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="28"
-      height="28"
-      fill="currentColor"
-      viewBox="0 0 24 24"
-      aria-hidden="true"
-    >
-      <path
-        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
-      />
-    </svg>
-  </a>
+    <!-- Email Link (Desktop only) -->
+    <button class="mail-button">
+      <a
+        class="email-link"
+        href="mailto:kevin@krazius-solutions.com?subject=My%20Subject&body=My%20Message"
+        aria-label="E-Mail schreiben"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+          />
+        </svg>
+      </a>
+    </button>
+  </div>
 
   <!-- Burger Menu Button -->
   <div class="burger-menu" id="burgerMenu">
