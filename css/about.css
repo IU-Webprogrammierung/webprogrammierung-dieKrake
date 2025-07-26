@@ -170,3 +170,16 @@
 #motivation-text {
   margin-right: 5vw;
 }
+
+/* Animation */
+.main-container {
+  opacity: 0;
+  transition: opacity 1.3s ease-out;
+
+  will-change: opacity;
+  backface-visibility: hidden;
+}
+
+.main-container.animate-in {
+  opacity: 1;
+}
