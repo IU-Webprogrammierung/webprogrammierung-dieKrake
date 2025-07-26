@@ -6,6 +6,7 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+  color: var(--text-color-main);
 }
 
 .about h1,
@@ -17,7 +18,7 @@
 .about p,
 .motivation p {
   font-size: var(--font-size-about-p);
-  color: #555;
+  color: var(--text-color-secondary);
   margin-bottom: 1rem;
   line-height: 1.6;
 }
