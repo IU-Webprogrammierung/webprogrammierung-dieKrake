@@ -361,6 +361,10 @@
   color: var(--services-card-header-p);
 }
 
+.card-link {
+  color: var(--card-link-text-color);
+}
+
 .card-image {
   margin-top: 20px;
 }
