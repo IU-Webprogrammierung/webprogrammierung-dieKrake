@@ -1,30 +1,27 @@
-# Mein Portfolio
+# 💼 Mein Portfolio – Krazius Solutions
 
-Ein responsives persönliches Portfolio zur Präsentation von Lebenslauf, Dienstleistungen und Skills.
+Ein modernes, responsives Web-Portfolio zur professionellen Präsentation von Lebenslauf, Dienstleistungen und technischen Kompetenzen.
 
-## 📋 Projektübersicht
+## 📌 Projektübersicht
 
-Dieses Portfolio ist eine persönliche Website zur Darstellung meiner beruflichen Erfahrungen, angebotenen Dienstleistungen und technischen Fähigkeiten. Die Website befindet sich aktuell noch in der Entwicklungsphase und wird laufend erweitert.
+Dieses Portfolio dient als zentrale Plattform zur Darstellung meiner beruflichen Laufbahn, meiner Angebote in den Bereichen Coaching & Softwareentwicklung sowie meiner fachlichen und persönlichen Stärken. Die Seite ist vollständig responsive, modular aufgebaut und wird kontinuierlich weiterentwickelt.
 
 ## 🌟 Features
 
-- **Responsive Design**: Optimiert für Desktop und mobile Geräte
-- **Modulares Layout**: Header und Footer werden via JavaScript eingebunden
-- **Mehrere Themenbereiche**:
-  - Startseite mit Überblick
-  - Detaillierter Lebenslauf
-  - Dienstleistungen (Coaching & Softwareentwicklung)
-  - Skills und Technologien
-  - Kontaktformular
-  - Über Mich
+- **Responsives Design** für alle Bildschirmgrößen
+- **Modularisierung via JavaScript**: Header & Footer dynamisch eingebunden
+- **Dark-/Light-Theme Toggle** mit lokalem Speicher
+- **Animierte UI-Elemente** via Intersection Observer
+- **Strukturierte Navigation & Mobilmenü (Burger-Menü)**
+- **Barriereoptimierte Gestaltung**
 
 ## 🔧 Technologie-Stack
 
 - HTML5
-- CSS3
-- JavaScript (für Komponenten-Einbindung)
+- CSS3 (modularisiert pro Seite)
+- JavaScript (DOM-Manipulation, Komponenten-Logik)
 
-## 📁 Projektstruktur
+## 🗂️ Projektstruktur
 
 ```
 portfolio/
@@ -32,75 +29,54 @@ portfolio/
 ├── index.html                # Startseite
 ├── cv.html                   # Lebenslauf
 ├── services.html             # Dienstleistungen
-├── skills.html               # Fähigkeiten und Tech-Stack
+├── skills.html              # Skills und Technologien
 ├── contact.html              # Kontaktformular
 ├── about.html                # Über mich
-├── impressum.html            # Impressum
+├── impressum.html            # Rechtliches
 ├── datenschutz.html          # Datenschutz
 │
 ├── css/
-│   ├── index.css             # Styling für Startseite
-│   ├── cv.css                # Styling für Lebenslauf
-│   ├── services.css          # Styling für Dienstleistungen
-│   ├── skills.css            # Styling für Skills
-│   ├── contact.css           # Styling für Kontaktformular
-│   ├── about.css             # Styling für Über mich
-│   └── footer.css            # Styling für Footer
+│   ├── *.css                 # Jeweils seitenbezogenes Styling
 │
 ├── js/
-│   └── include.js            # Script für das Einbinden von Header und Footer
+│   ├── include.js            # Header & Footer Einbindung
+│   ├── header.js             # Burger-Menü & Navigation
+│   ├── theme-switcher.js     # Light-/Darkmode
+│   └── element-animation.js  # Animation beim Scrollen
+│
+├── components/
+│   ├── header.html           # Header-Markup
+│   └── footer.html           # Footer-Markup
 │
 └── img/
-    └── Krazius Solutions Logo weiß.webp  # Logo und weitere Bilder
+    └── *.webp                # Logos, Illustrationen, Fotos
 ```
 
-## 📄 Seitenübersicht
+## 🔍 Seitenübersicht
 
-### Startseite (index.html)
+| Seite                                | Inhalt                                                              |
+| ------------------------------------ | ------------------------------------------------------------------- |
+| `index.html`                         | Hero-Bereich, Übersicht der Dienstleistungen, Einstieg in Portfolio |
+| `cv.html`                            | Berufserfahrung, Projekte, Ausbildung, Zertifikate                  |
+| `services.html`                      | Coaching & individuelle Webentwicklung                              |
+| `skills.html`                        | Tech-Stack, Soft Skills                                             |
+| `contact.html`                       | Kontaktformular & Kontaktinformationen                              |
+| `about.html`                         | Persönliche Vorstellung, Motivation                                 |
+| `impressum.html`, `datenschutz.html` | Rechtliche Angaben                                                  |
 
-- Hero-Sektion mit Willkommensnachricht
-- Übersicht der angebotenen Dienstleistungen
+## 💡 Code-Snippets
 
-### Lebenslauf (cv.html)
-
-- Berufserfahrung
-- Abgeschlossene Projekte
-- Bildungshintergrund
-- Zertifikate
-
-### Dienstleistungen (services.html)
-
-- Coaching-Angebote
-- Software-Entwicklung
-
-### Skills (skills.html)
-
-- Tech-Stack
-- Soft Skills
-
-### Kontakt (contact.html)
-
-- Kontaktformular
-- Direkte Kontaktinformationen
-
-### Über mich (about.html)
-
-- Persönliche Vorstellung
-- Motivation
-
-## 💻 Code-Beispiel
-
-Das Projekt verwendet ein einfaches JavaScript-System, um Header und Footer in alle Seiten einzubinden:
+### 🔁 Dynamische Einbindung von Komponenten (JS)
 
 ```javascript
-// Beispiel aus include.js
+// include.js
 document.addEventListener("DOMContentLoaded", () => {
-  includeHTML("header", "header.html");
-  includeHTML("footer", "footer.html");
+  includeHTML("header", "components/header.html");
+  includeHTML("footer", "components/footer.html");
 });
 
 function includeHTML(elementId, file) {
-  fetch(file)
+  return fetch(file)
     .then((response) => response.text())
     .then((data) => {
       document.getElementById(elementId).innerHTML = data;
@@ -109,33 +85,78 @@ function includeHTML(elementId, file) {
 }
 ```
 
-## ⌨️ Aktuelle Projektphase
+### 🎨 Theme-Umschaltung
 
-- [✅] Konzeptionsphase
-- [✅] Erarbeitungs-/Reflexionsphase
-- [❌] Finalisierungsphase
+```javascript
+function toggleTheme() {
+  const html = document.documentElement;
+  const currentTheme = html.getAttribute("data-theme");
 
-## 📝 Aktuelle To-Dos
+  if (currentTheme === "dark") {
+    html.removeAttribute("data-theme");
+    localStorage.setItem("theme", "light");
+  } else {
+    html.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+  }
+}
+```
 
-- [✅] Fertigstellung der Inhalte (Platzhaltertexte wurden ersetzt)
-- [✅] Alt Texte der Bilder überarbeitet
-- [✅] Inhalte eingefügt
-- [✅] Bilder & Logos komprimiert
-- [✅] CSS-Styling der einzelnen Seiten abgeschlossen (weiteres Feintuning geplant)
-- [✅] Optimierung der Bilder und Medien (teilweise zu klein auf großen Bildschirmen)
-- [⚠️] Responsives Design teilweise abgeschlossen (Breakpoint bei 1024 px noch problematisch)
-- [✅] Verbesserung der Barrierefreiheit
-- [ ] Font vereinheitlichen
-- [ ] Überarbeitung der Gestaltung von Karten und Skill-Elementen
-- [ ] Überarbeitung der Desktop-Ansicht der Landing Page
-- [ ] Überarbeitung der Desktop-Ansicht der About Page
-- [ ] Überarbeitung der Desktop-Ansicht der Services Page
+### ✨ Element-Animation beim Scrollen
+
+```javascript
+function initCardAnimations() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-in");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+      rootMargin: "0px 0px -80px 0px",
+    }
+  );
+
+  document.querySelectorAll(".animate-element").forEach((el) => {
+    observer.observe(el);
+  });
+}
+```
+
+## 📈 Aktuelle Projektphase
+
+- ✅ Konzeptionsphase
+- ✅ Erarbeitungs-/Reflexionsphase
+- ✅ Finalisierungsphase
+
+## 📋 Erledigte Aufgaben
+
+- ✅ Struktur & Navigation aufgebaut
+- ✅ Inhalte eingefügt und optimiert
+- ✅ Bilder und Assets komprimiert
+- ✅ Theme-Umschaltung (Dark/Light) implementiert
+- ✅ Barrierefreiheit & Kontraste verbessert
+- ✅ Desktop- & Mobile-Ansicht überarbeitet
+- ✅ Modularisierung mit `include.js`
+- ✅ Animationen integriert
+- ✅ Responsiveness
+
+## 🔧 Geplante Verbesserungen
+
+- 🔜 Feintuning Optik
+- 🔜 Internationalisierung (EN/DE)
+- 🔜 SEO-Optimierung
+- 🔜 Erfolgreiches Senden über Kontakformular
 
 ## 📞 Kontakt
 
-- E-Mail: kevin@krazius-solutions.com
-- Website: [Portfoliolink](https://iu-webprogrammierung.github.io/webprogrammierung-dieKrake/)
+- 📧 E-Mail: [kevin@krazius-solutions.com](mailto:kevin@krazius-solutions.com)
+- 🌐 Live-Demo: [Zum Portfolio](https://iu-webprogrammierung.github.io/webprogrammierung-dieKrake/)
 
 ---
 
-© 2025 Mein Portfolio. Alle Rechte vorbehalten.
+© 2025 Krazius Solutions. Alle Rechte vorbehalten.
