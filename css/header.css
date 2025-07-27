@@ -76,6 +76,9 @@
 [data-theme="dark"] .mail-button:hover {
   background-color: #333333;
 }
+[data-theme="dark"] .mobile-nav-list a {
+  color: white;
+}
 
 /* Burger Menu Styles */
 .burger-menu {
