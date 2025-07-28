@@ -130,13 +130,6 @@
   .contact-about {
     display: flex;
   }
-  .contact-about {
-    .button-container {
-      height: 100%;
-      display: flex;
-      align-items: center;
-    }
-  }
 }
 
 @media (min-width: 640px) and (max-width: 1399px) {
